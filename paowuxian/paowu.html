@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.1.0.min.js"></script>
+    <script src="./paowu.js"></script>
+    <style>
+        html,body{
+            margin:0px;
+            padding:0px;
+        }
+        #forClickArea{
+            width:500px;
+            height:500px;
+            background:lightgreen;
+            float:left;
+            margin-top:20px;
+        }
+
+        #startpotion{
+            border-radius:50%;
+            width:20px;
+            height:20px;
+            background:lightseagreen;
+            margin-left:900px;
+            margin-top:20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div id="forClickArea"></div>
+
+
+    <div id="startpotion"></div>
+    <script type="text/javascript">
+       
+       $('#forClickArea').clickQu({
+           startPoint:$('#startpotion'),
+           pointSzie:6,
+           pointNum:50
+       });
+    
+    </script>
+</body>
+</html>
